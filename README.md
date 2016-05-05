@@ -1,4 +1,4 @@
-# TREC Adhoc 5, 6, 7, 8 Grid of Points
+# TREC Adhoc 5, 6, 7, 8 Grid of Points (SIGIR 2016)
 
 We selected a set of alternative implementations of each component and by using the [Terrier open source system](http://terrier.org/) we created a run for each system defined by combining the available components in all possible ways.
 
@@ -10,7 +10,7 @@ We considered three main components of an IR system: stop list, Lexical Unit Gen
 
 ## Content
 
-Contents of the directories:
+Content of the directories:
 - **matlab**: the Matlab code for running the analyses and reproducing the experiments from the Grid of Points contained in the `data` directory. It requires the [MATTERS library](http://matters.dei.unipd.it/).
 - **data**: the Grid of Points for the following Adhoc collections: TREC 5 (`AH_MONO_EN_TREC1996` directory), TREC 6 (`AH_MONO_EN_TREC1997` directory), TREC 7 (`AH_MONO_EN_TREC1998` directory), TREC 8 (`AH_MONO_EN_TREC1999` directory). Each directory contains a `.mat` file for each of the following evaluation measures: AP, P@10, nDCG@20, ERR@20, and RBP. Files have to be opened with the `serload` command of the [MATTERS library](http://matters.dei.unipd.it/).
 - **java**: it contains the extensions to Terrier 4.1 needed for using n-grams, the Lovins stemmer, and the Krovetz stemmer
